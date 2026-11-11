@@ -44,6 +44,11 @@ It will start updating and The update takes a few mins
 
 <img width="1920" height="922" alt="kali desktop after login" src="https://github.com/user-attachments/assets/ed1732c9-2127-4766-9af9-446e3a38a089" />
 
+### 6. Took a snapshot
+After the update finished, I shut down the VM and took a snapshot called "Clean Kali". A snapshot saves the VM's exact state, so I can restore it if I break something later.
+
+<img width="1917" height="1015" alt="Snapshot" src="https://github.com/user-attachments/assets/44f459f8-8220-4477-98e5-04971d73de05" />
+
 ## Problems I hit
 - Two VirtualBox files in the folder: the `.vbox` is the one to open
 - `sudo` showed no characters while typing the password (normal in Linux)
@@ -54,7 +59,6 @@ It will start updating and The update takes a few mins
 - changed the default kali Password with the `passwd` command
 
 ## Next
-- Take a "Clean Kali" snapshot
 - Add Metasploitable 2 as the target
 - Switch to a Host-only network
 - First nmap scan
