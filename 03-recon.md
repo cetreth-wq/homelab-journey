@@ -4,14 +4,18 @@
 Confirm Kali can reach Metasploitable2 over the network, then enumerate open services.
 
 ## Connectivity Test
+```
 ping -c 4 <target-ip>
-Result: 4/4 packets received, 0% packet loss — confirms both VMs are on the same Host-Only network and can communicate.
+```
+**Result:** 4/4 packets received, 0% packet loss — confirms both VMs are on the same Host-Only network and can communicate.
 
 ## Service Scan
+```
 nmap -sV -n <target-ip>
-Used -n to skip DNS resolution — without it, Nmap crashed with a resolver assertion error on this Host-Only network (no DNS server present).
+```
+Used `-n` to skip DNS resolution — without it, Nmap crashed with a resolver assertion error on this Host-Only network (no DNS server present).
 
-Result: 23 open ports, including:
+**Result:** 23 open ports, including:
 - FTP (vsftpd 2.3.4)
 - SSH (OpenSSH 4.7p1)
 - Telnet, rexec/rlogin/rsh
